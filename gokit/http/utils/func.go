@@ -8,6 +8,7 @@ import (
 	"github.com/go-redis/redis"
 	"github.com/segmentio/ksuid"
 	"git/miniTools/data-service/utils/cache"
+	"github.com/penglq/QLog"
 	"math/rand"
 	"strconv"
 	"strings"

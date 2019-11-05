@@ -24,7 +24,7 @@ func TestJsonMap(t *testing.T) {
 	b["c"] = []string{"aa1", "bb1"}
 
 	d := []data{}
-	d = append(d, data{ Questions: b})
+	d = append(d, data{Yrduid: "123124", Questions: b})
 	a := s{
 		Rescode: "0",
 		ResDesc: "成功",
@@ -43,6 +43,7 @@ type s struct {
 }
 
 type data struct {
+	Yrduid          string              `json:"yrduid"`
 	Name            string              `json:"name"`
 	Mobile          string              `json:"mobile"`
 	ReservationTime string              `json:"reservationTime"`

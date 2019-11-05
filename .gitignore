@@ -14,3 +14,6 @@
 *.out
 
 .idea
+将删除 gokit/http/cmd/
+将删除 gokit/http/docs/
+将删除 gokit/http/static/
