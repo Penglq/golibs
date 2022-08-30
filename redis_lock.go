@@ -1,4 +1,4 @@
-package model
+package golibs
 
 import (
 	"crypto/rand"

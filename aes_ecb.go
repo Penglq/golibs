@@ -1,4 +1,4 @@
-package util
+package golibs
 
 import (
 	"bytes"

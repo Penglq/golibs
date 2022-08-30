@@ -1,4 +1,4 @@
-package utils
+package golibs
 
 import (
 	"context"
@@ -56,7 +56,7 @@ func (h *HttpSend) NewClient(ctx *context.Context) {
 		}
 	}
 }
-func (h *HttpSend) HttpDo() ([]byte) {
+func (h *HttpSend) HttpDo() []byte {
 	var resp *http.Response
 	var body []byte
 	resp, h.err = h.client.Do(h.request)

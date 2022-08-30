@@ -1,13 +1,13 @@
-package utils
+package golibs
 
 import (
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/json"
+	"git/miniTools/data-service/utils/cache"
 	"github.com/go-playground/validator"
 	"github.com/go-redis/redis"
 	"github.com/segmentio/ksuid"
-	"git/miniTools/data-service/utils/cache"
 	"math/rand"
 	"strconv"
 	"strings"
@@ -16,6 +16,7 @@ import (
 
 var TimeLocation, _ = time.LoadLocation("Asia/Shanghai") // 当地时间
 var Layout = "2006-01-02 15:04-05"
+
 // 获取当月第一天零点
 func GetMonthZero() time.Time {
 	monthStr := time.Now().Format("200601")

@@ -1,4 +1,4 @@
-package utils
+package golibs
 
 import (
 	"encoding/json"
@@ -24,7 +24,7 @@ func TestJsonMap(t *testing.T) {
 	b["c"] = []string{"aa1", "bb1"}
 
 	d := []data{}
-	d = append(d, data{ Questions: b})
+	d = append(d, data{Questions: b})
 	a := s{
 		Rescode: "0",
 		ResDesc: "成功",
@@ -39,7 +39,7 @@ func TestJsonMap(t *testing.T) {
 type s struct {
 	Rescode string `json:"resCode"`
 	ResDesc string `json:"resDesc"`
-	ResData []data   `json:"resData"`
+	ResData []data `json:"resData"`
 }
 
 type data struct {

@@ -1,6 +1,6 @@
 // Package soap provides a SOAP HTTP client.
 
-package util
+package golibs
 
 import (
 	"bytes"
